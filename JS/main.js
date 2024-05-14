@@ -22,7 +22,17 @@ document.getElementById('itemTemplate').addEventListener('submit', function(even
 document.getElementById('changeBackground').addEventListener('click', function() {
     const currentColor = document.body.style.backgroundColor;
     document.body.style.backgroundColor = currentColor === 'rgb(245, 66, 120)' ? '#42f59e' : 'rgb(245, 66, 120)';
+    document.body.classList.toggle('color-toggled');
 });
+
+document.getElementById('resetList').addEventListener('click', function() {
+    const itemList = document.getElementById('itemList');
+    while (itemList.firstChild) {
+        itemList.removeChild(itemList.firstChild);
+    }
+});
+
+
 
 window.addEventListener('resize', function() {
     console.log('Window resized to: ' + window.innerWidth + 'x' + window.innerHeight);
