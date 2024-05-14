@@ -11,7 +11,11 @@ Reset List: A button to clear all items from the list.
 Form Validation:
 HTML Attribute Validation: Ensures that the input field only accepts alphanumeric characters and spaces.
 DOM Event-based Validation: This method provides real-time feedback by changing the border color of the input field based on the validity of the entry.
-Technologies Used
-HTML5
-CSS3
-JavaScript (ES6)
+
+#Technologies Used
+
+#HTML5
+
+#CSS3
+
+#JavaScript (ES6)
