@@ -32,7 +32,13 @@ document.getElementById('resetList').addEventListener('click', function() {
     }
 });
 
-
+DocumentTimeline.querySelector('#itemTemplate').addEventListener('input', function(event) {
+    if (!event.target.validity.patternMismatch) {
+        event.target.setAttribute('style', 'border-color: red;');
+    } else {
+        event.target.setAttribute('style', 'border-color: red;');
+    }
+});
 
 window.addEventListener('resize', function() {
     console.log('Window resized to: ' + window.innerWidth + 'x' + window.innerHeight);
